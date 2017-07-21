@@ -51,7 +51,8 @@ function createMarkers(places) {
   var placesList = document.getElementById("places");
   console.log(placesList);
 
-  for (var i = 0, place; (place = places[i]); i++) {
+  for (var i = 0, place;
+    (place = places[i]); i++) {
     var image = {
       url: place.icon,
       size: new google.maps.Size(71, 71),
@@ -89,7 +90,7 @@ function createMarkers(places) {
     });
 
     // console.log(place.geometry.location)
-    placesList.innerHTML += "<li>" + place.name + " | " + place.rating + " | "  + place.vicinity + "</li>";
+    placesList.innerHTML += "<li>" + place.name + " | " + place.rating + " | " + place.vicinity + "</li>";
 
     bounds.extend(place.geometry.location);
   }
