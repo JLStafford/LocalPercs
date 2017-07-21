@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Local Percs</title>
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4eZE48-juA4qtWRJgeLIxx0nzultOfa0&libraries=places"></script> -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4eZE48-juA4qtWRJgeLIxx0nzultOfa0&libraries=places&callback=mapsApiReady" async defer></script>
+  <script type="text/javascript" src="javascript.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Oleo+Script|Pattaya" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="intro">
+    <div class="intro-body">
+      <div class="container-fluid col-md-8 justify-content-md-center">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="heading">Local Percs</h1>
+            <p class="intro-text col-md-12">Let's find your next cup.</p>
+          </div>
+        </div>
+        <div id="input" class="row justify-content-md-center">
+          <div id="input-group" class="input-group col-md-3">
+            <input id="text" type="text" class="form-control" placeholder="Zip Code"></input>
+          </div>
+          <a id="button" class="button" href="#map">Go</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="mapSection" class="container content-section text-center justify-content-md-center">
+    <div class="row map">
+      <div id="map-div" class="col-md-12 map-div">
+        <div id="map" class="col-md-12"></div>
+      </div>
+    </div>
+  </section>
+  <section id="resultsSection" class="container places-section text-center justify-content-md-center">
+    <div class="row places">
+      <div id="places-panel" class="col-md-12">
+        <h2>Results</h2>
+        <ul id="places"></ul>
+        <button id="more">More results</button>
+      </div>
+    </div>
+  </section>
+  <footer class="justify-content-md-center">
+    <div class="row justify-content-md-center">
+      <div class="container justify-content-md-center">
+        <p>Copyright &copy; Jesse Stafford 2017</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
